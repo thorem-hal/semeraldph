@@ -1,0 +1,63 @@
+.projectbox{
+    display: grid;
+    margin: 50px;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 500px 500px 500px;
+
+}
+.projectauthor{
+    color: #63dd9aff;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    padding:0;
+    margin:5px 0 auto 0;
+}
+.projecttitle{
+    color: white;
+    font-family: Roboto;
+    font-size: 26px;
+    font-weight: 500;
+    padding: 0;
+    margin-top:5px;
+}
+.projectcover{
+    height: 450px;
+    width: 100%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+.project:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.sem1 .projectcover{
+    background-image: url('sem1.JPG');
+}
+.sem2 .projectcover{
+    background-image: url('sem2.JPG');
+}
+.sem3 .projectcover{
+    background-image: url('sem3.JPG');
+}
+.sem4 .projectcover{
+    background-image: url('sem4.JPG');
+    background-position: center;
+}
+.sem5 .projectcover{
+    background-image: url('sem5.JPG');
+    background-position: center;
+}
+.sem6 .projectcover{
+    background-image: url('sem6.JPG');
+}
+.sem7 .projectcover{
+    background-image: url('sem7.PNG');
+}
+.sem8 .projectcover{
+    background-image: url('sem8.JPG');
+    background-position: center;
+}

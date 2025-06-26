@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="semercas.css">
+    <link rel="stylesheet" href="projectbox.css">
+    <title>Document</title>
+    <style>
+    body{
+        background-image: none;
+        height: 100%;
+    }
+    .textbox{
+        margin-top: 0;
+    }
+    .taglist{
+        display: inline-flex;
+    }
+    .taglist_span{
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 100;
+        margin: auto 10px auto 10px;
+        cursor: pointer;
+        color: rgb(173, 173, 173);
+    }
+    .taglist_span:hover{
+        color: rgb(210, 210, 210)
+    }
+    #showall {
+        text-decoration-line: underline;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class = "header">
+        <a href="Semeraldph.html"><img href="Semeraldph.html" class = "logo" src="logo.jpg"></img></a>
+        <a class = "tex" href="Semeraldph.html">ГЛАВНАЯ</a><div class = "aux"></div><a class = "tex" href="raboti.html">РАБОТЫ</a><div class = "aux"></div><a class = "tex" href="obomne.html">ОБО МНЕ</a>
+        <a class = "yaz split" href="Semeraldphen.html">ENG</a>
+        <a class = "yaz split" href="contact.html">КОНТАКТЫ</a>
+    </div>      
+    <div class="textbox">
+    <h1>МОИ ПРОЕКТЫ</h1>
+    <div class="taglist">
+        <span class="taglist_span" id="showall">ВСЕ ПРОЕКТЫ</span>
+        <span class="taglist_span" id="showanima">АНИМАЦИЯ</span>
+        <span class="taglist_span" id="showillu">ИЛЛЮСТРАЦИЯ</span>
+        <span class="taglist_span" id="showchara">ПЕРСОНАЖИ</span>
+        <span class="taglist_span" id="shownft">NFT-ИЛЛЮСТРАЦИЯ</span>
+        <span class="taglist_span" id="showother">ДРУГОЕ</span>
+    </div>
+    </div>
+    <div class="projectbox">
+        <div class="project sem1 anima">
+            <div class="projectcover"></div>
+            <h2 class="projectauthor">Semeraldph</h2>
+            <h1 class="projecttitle">Трубы</h1>
+        </div>
+        <div class="project sem2">
+            <div class="projectcover"></div>
+            <h2 class="projectauthor">Semeraldph</h2>
+            <h1 class="projecttitle">KAKAYATOHUYNYA</h1>
+        </div>
+        <div class="project sem3 anima">
+            <div class="projectcover"></div>
+            <h2 class="projectauthor">Semeraldph</h2>
+            <h1 class="projecttitle">KAKAYATOHUYNYA</h1>
+        </div>
+        <div class="project sem4 other_stuff"">
+            <div class="projectcover"></div>
+            <h2 class="projectauthor">Semeraldph</h2>
+            <h1 class="projecttitle">KAKAYATOHUYNYA</h1>
+        </div>
+        <div class="project sem5 anima">
+            <div class="projectcover"></div>
+            <h2 class="projectauthor">Semeraldph</h2>
+            <h1 class="projecttitle">Трубы</h1>
+        </div>
+        <div class="project sem6 illus">
+            <div class="projectcover"></div>
+            <h2 class="projectauthor">Semeraldph</h2>
+            <h1 class="projecttitle">KAKAYATOHUYNYA</h1>
+        </div>
+        <div class="project sem7 anima nft">
+            <div class="projectcover"></div>
+            <h2 class="projectauthor">Semeraldph</h2>
+            <h1 class="projecttitle">KAKAYATOHUYNYA</h1>
+        </div>
+        <div class="project sem8 nft">
+            <div class="projectcover"></div>
+            <h2 class="projectauthor">Semeraldph</h2>
+            <h1 class="projecttitle">KAKAYATOHUYNYA</h1>
+        </div>
+        </div>
+<script>
+const tags = document.getElementsByClassName("taglist_span");
+const projects = document.getElementsByClassName("project");
+const animations = document.getElementsByClassName("anima");
+const illustrations = document.getElementsByClassName("illus");
+const characters = document.getElementsByClassName("chara");
+const nft = document.getElementsByClassName("nft");
+const other = document.getElementsByClassName("other_stuff");
+
+var alltag = document.getElementById("showall");
+
+var Animatag = document.getElementById("showanima");
+
+var Illutag = document.getElementById("showillu");
+
+var Charatag = document.getElementById("showchara");
+
+var NFTtag = document.getElementById("shownft");
+
+var Othertag = document.getElementById("showother");
+
+const tag = [Animatag, Illutag, Charatag, NFTtag, Othertag];
+const objects = [animations, illustrations, characters, nft, other]
+
+for (let i = 0; i < tag.length; i++){
+    tag[i].onclick= function(){
+    for (let j = 0; j < tags.length; j++){
+        tags[j].style.textDecorationLine = "none";}
+    tag[i].style.textDecorationLine="underline";
+    for (let j = 0; j < projects.length; j++){
+        projects[j].style.display = "none";
+    }
+    for (let j = 0; j < objects[j].length; j++){
+        objects[i][j].style.display = "inherit";}
+    }
+}
+
+alltag.onclick = function(){
+    for (let i = 0; i < tags.length; i++){
+        tags[i].style.textDecorationLine = "none";}
+    alltag.style.textDecorationLine="underline";
+    for (let i = 0; i < projects.length; i++){
+    projects[i].style.display = "inherit";} 
+}
+</script>
+</body>
+</html>
