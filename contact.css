@@ -1,0 +1,24 @@
+
+.other-stuff {
+    background-image: linear-gradient(black, #63dd9aff);
+    height: 600px;
+    background-position: center; 
+    background-repeat: no-repeat; 
+   }
+
+hr {
+    color:white;
+    border-style: dashed;
+}
+.icon-grid{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    justify-content: center;
+}
+.icon-grid img{
+    height: 150px;
+}
+
+.textbox p{
+    color: white;
+}
