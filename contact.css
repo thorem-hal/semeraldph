@@ -14,9 +14,11 @@ hr {
     display: grid;
     grid-template-columns: 200px 200px;
     justify-content: center;
+    padding-top: 0;
 }
 .icon-grid img{
     height: 150px;
+    padding-top: 0;
 }
 
 .textbox p{

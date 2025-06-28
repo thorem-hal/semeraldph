@@ -12,7 +12,7 @@ body{
     margin-top: 0;
 }
 .obomne-date{
-    font-family: Montserrat;
+    font-family: "Montserrat", sans-serif;
     font-size: 70px;
     color: #63dd9aff;
     font-weight:500;
@@ -42,9 +42,9 @@ body{
 }
 .obomne-desc{
     position: relative;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 100;
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
     text-align: left;
     padding: 20px;
     color:white;
@@ -67,10 +67,24 @@ body{
 }
 .obomne-desc-back{
     position: relative;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 100;
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
     text-align: left;
     padding: 20px;
     color:white;
+}
+
+.obomne-second{
+    align-content: center;
+}
+.obomne-second img{
+    width: 90%;
+} 
+
+.obomne-first{
+    display: inline;
+}
+.obomne-first img{
+    height: 400px;
 }
