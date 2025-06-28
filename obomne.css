@@ -1,6 +1,5 @@
 body{
     background-image: none;
-    height: 100%;
 }
 .arrow{
     height: 300px;
@@ -79,12 +78,9 @@ body{
     align-content: center;
 }
 .obomne-second img{
-    width: 90%;
+    width: 400px;
 } 
 
-.obomne-first{
-    display: inline;
-}
 .obomne-first img{
     height: 400px;
 }
