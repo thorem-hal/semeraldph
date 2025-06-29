@@ -1,0 +1,81 @@
+
+
+.full-box img{
+    width:90%;
+}
+
+.full-box {
+    margin: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    justify-content: center;
+}
+
+.textbox h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 1000;
+    color: white;
+    margin-top: 0;
+}
+
+.textbox h2{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #63dd9aff;
+    margin-bottom: 0;
+    
+}
+
+.textbox {
+    margin: 1%;
+    margin-top: 2%;
+    text-align: left;
+}
+
+.textbox-2 p{
+    color: white;
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-size: 24px;
+}
+
+.linklist {
+    display: inline;
+}
+
+.linklist img{
+    height: 100px;
+    width: 100px;
+    margin-right: 5%;
+}
+
+.publicize p{
+    font-weight: 500;
+}
+
+.tags-date {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: left;
+}
+
+#taglead{
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    color: white;
+    margin: 2%;
+    margin-left: 0;
+    margin-top: 10%;
+}
+
+.tags-date p{
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    margin: 0;
+    color: white;
+}
+
+.animabox {
+    margin: 2%;
+}

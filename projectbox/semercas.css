@@ -1,0 +1,106 @@
+.logo {
+    height: 70px;
+    padding: 0px;
+    float: left;
+    margin-right: 10px;
+}
+
+body {
+    margin:0;
+    background-color: #2A2A2A;
+   }
+
+.header {
+    position: sticky;
+    top: 0;
+    margin: 0;
+    background-color: #191826ff;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+}
+.header div{
+    display: inline;
+}
+
+.header .tex {
+    color: rgb(255, 255, 255);
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    line-height: 70px;
+    float: center;
+    padding: 100px;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin:0;
+}
+
+.header .aux {
+    background-color: rgb(255, 255, 255);
+    line-height: 70px; 
+    float: center;
+    padding: 10px 1px 10px 1px;
+    border-radius: 1px;
+}
+
+.header .tex:hover {
+    color: #191826ff;
+    background-color: #63dd9aff;
+}
+
+.yaz {
+    color: rgb(255, 255, 255);
+    font-family: "Roboto", serif;
+    float: center;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 500; /* !!! */
+    line-height: 18px;
+    border: 2px solid;
+    padding: 10px;
+    margin: 15px 30px 15px 30px;
+    border-image: url(/Users/vdavidyan/semeraldph-1/sembord.png) 100 / 3px;
+    
+}
+.yaz:hover {
+    background-image: linear-gradient(#5ec78dff, #459468ff);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #191826ff;
+}
+
+
+.header .split{
+    float: right; /* !!! */
+}
+
+.header .selected{
+    color: #fedf00;
+    text-decoration: underline; /* !!! */
+    font-weight: 300; /* !!! */
+}
+h1{
+    font-family: "Roboto", serif;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.textbox p{
+    color: rgb(188, 188, 188);
+    font-family: "Roboto", serif;
+    font-size: 26px;
+    font-weight: 200;
+    padding: 10px;
+}
+
+.textbox {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 100px
+}
+
+.end {
+    padding-bottom: 50px;
+}
