@@ -11,7 +11,7 @@
     <title>Document</title>
     <style>
     body{
-        background-color: black;
+        background-color: #2A2A2A;
         height: 100%;
     }
     .textbox{
@@ -56,46 +56,46 @@
     </div>
     </div>
     <div class="projectbox">
-        <div class="project sem1 anima">
+        <a class="project sem1 anima">
             <div class="projectcover"></div>
             <h2 class="projectauthor">Semeraldph</h2>
-            <a class="projecttitle">Трубы</a>
-        </div>
-        <div class="project sem2">
+            <h1 class="projecttitle">Трубы</h1>
+        </a>
+        <a class="project sem2">
             <div class="projectcover"></div>
             <h2 class="projectauthor">Semeraldph</h2>
-            <a class="projecttitle">KAKAYATOHUYNYA</a>
-        </div>
-        <div class="project sem3 anima chara">
+            <h1 class="projecttitle">KAKAYATOHUYNYA</h1>
+        </a>
+        <a class="project sem3 anima chara">
             <div class="projectcover"></div>
             <h2 class="projectauthor">Semeraldph</h2>
-            <a class="projecttitle">KAKAYATOHUYNYA</a>
-        </div>
-        <div class="project sem4 other_stuff"">
+            <h1 class="projecttitle">KAKAYATOHUYNYA</h1>
+        </a>
+        <a class="project sem4 other_stuff"">
             <div class="projectcover"></div>
             <h2 class="projectauthor">Semeraldph</h2>
-            <a class="projecttitle">KAKAYATOHUYNYA</a>
-        </div>
-        <div class="project sem5 anima">
+            <h1 class="projecttitle">KAKAYATOHUYNYA</h1>
+        </a>
+        <a class="project sem5 anima" href="projectbox/truby.html">
             <div class="projectcover"></div>
             <h2 class="projectauthor">Semeraldph</h2>
-            <a class="projecttitle" href="projectbox/truby.html">Трубы</a>
-        </div>
-        <div class="project sem6 illus">
+            <h1 class="projecttitle">Трубы</h1>
+        </a>
+        <a class="project sem6 illus">
             <div class="projectcover"></div>
             <h2 class="projectauthor">Semeraldph</h2>
-            <a class="projecttitle">KAKAYATOHUYNYA</a>
-        </div>
-        <div class="project sem7 anima nft">
+            <h1 class="projecttitle">KAKAYATOHUYNYA</h1>
+        </a>
+        <a class="project sem7 anima nft">
             <div class="projectcover"></div>
             <h2 class="projectauthor">Semeraldph</h2>
-            <a class="projecttitle">KAKAYATOHUYNYA</a>
-        </div>
-        <div class="project sem8 nft">
+            <h1 class="projecttitle">KAKAYATOHUYNYA</h1>
+        </a>
+        <a class="project sem8 nft">
             <div class="projectcover"></div>
             <h2 class="projectauthor">Semeraldph</h2>
-            <a class="projecttitle">KAKAYATOHUYNYA</a>
-        </div>
+            <h1 class="projecttitle">KAKAYATOHUYNYA</h1>
+        </a>
         </div>
 <script>
 const tags = document.getElementsByClassName("taglist_span");
@@ -123,14 +123,15 @@ const objects = [animations, illustrations, characters, nft, other]
 
 for (let i = 0; i < tag.length; i++){
     tag[i].onclick= function(){
+    var current_object = objects[i];
     for (let j = 0; j < tags.length; j++){
         tags[j].style.textDecorationLine = "none";}
     tag[i].style.textDecorationLine="underline";
     for (let j = 0; j < projects.length; j++){
         projects[j].style.display = "none";
     }
-    for (let j = 0; j < objects[j].length; j++){
-        objects[i][j].style.display = "inherit";}
+    for (let j = 0; j < current_object.length; j++){
+        current_object[j].style.display = "inherit";}
     }
 }
 

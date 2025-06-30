@@ -35,6 +35,11 @@
     cursor: pointer;
 }
 
+.project{
+    display: block;
+    text-decoration: none;
+}
+
 .sem1 .projectcover{
     background-image: url('sem1.JPG');
 }
@@ -46,11 +51,9 @@
 }
 .sem4 .projectcover{
     background-image: url('sem4.JPG');
-    background-position: center;
 }
 .sem5 .projectcover{
     background-image: url('truby_cover.jpg');
-    background-position: center;
 }
 .sem6 .projectcover{
     background-image: url('sem6.JPG');
@@ -60,5 +63,4 @@
 }
 .sem8 .projectcover{
     background-image: url('sem8.JPG');
-    background-position: center;
 }
