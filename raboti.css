@@ -1,0 +1,66 @@
+body{
+    background-color: #2A2A2A;
+    height: 100%;
+}
+.textbox{
+    margin-top: 0;
+}
+.taglist{
+    display: inline-flex;
+}
+.taglist_span{
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    margin: auto 10px auto 10px;
+    cursor: pointer;
+    color: rgb(173, 173, 173);
+}
+.taglist_span:hover{
+    color: rgb(210, 210, 210)
+}
+#showall {
+    text-decoration-line: underline;
+}
+
+.projectbox{
+    display: grid;
+    margin: 50px;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 500px 500px 500px;
+
+}
+.projectauthor{
+    color: #63dd9aff;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding:0;
+    margin:5px 0 auto 0;
+}
+.projecttitle{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    padding: 0;
+    margin-top:5px;
+    text-decoration: none;
+}
+.projectcover{
+    height: 450px;
+    width: 100%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+.project:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.project{
+    display: block;
+    text-decoration: none;
+}

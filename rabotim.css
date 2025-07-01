@@ -1,0 +1,72 @@
+body{
+    background-color: #2A2A2A;
+    height: 100%;
+}
+.textbox{
+    margin-top: 0;
+}
+.taglist{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+.taglist_span{
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    font-weight: 100;
+    margin: auto 10px auto 10px;
+    cursor: pointer;
+    color: rgb(173, 173, 173);
+}
+.taglist_span:hover{
+    color: rgb(210, 210, 210)
+}
+#showall {
+    text-decoration-line: underline;
+}
+
+.projectbox{
+    display: grid;
+    justify-content: stretch;
+    margin: 10px;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+
+}
+.projectauthor{
+    color: #63dd9aff;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding:0;
+    margin:5px 0 auto 0;
+    margin-right: 0;
+}
+.projecttitle{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0;
+    margin-top:5px;
+    text-decoration: none;
+}
+.projectcover{
+    height: 300px;
+    width: 200px;
+    margin: 0;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+.project:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.project{
+    display: block;
+    padding: 0;
+    text-decoration: none;
+}

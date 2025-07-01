@@ -25,12 +25,16 @@
         </a>
     </div>
     <div id="dropdown">
-    <a href="Semeraldph.html">ГЛАВНАЯ</a>
+    <a class="dropdown-item" href="Semeraldph.html">ГЛАВНАЯ</a>
     <hr>
-    <a href="raboti.html">РАБОТЫ</a>
+    <a class="dropdown-item" href="raboti.html">РАБОТЫ</a>
     <hr>
-    <a href="obomnr.html">ОБО МНЕ</a>
+    <a class="dropdown-item" href="obomne.html">ОБО МНЕ</a>
     <hr>
+    <div class = "mini">
+      <a href="contact.html">КОНТАКТЫ</a>
+      <a href="Semeraldphen.html">ENGLISH</a>
+    </div>
     </div>
     <div class = "welcomer">
         Semeraldph
@@ -117,17 +121,27 @@
 let navToggle = document.querySelector('.nav-toggle')
 let bars = document.querySelectorAll('.bar')
 let dropdown = document.getElementById('dropdown')
+let body = document.getElementsByTagName('body')
 let HamToggler = 0
 
 function toggleHamburger(e) {
   if (HamToggler == 0){dropdown.style.display = 'block';
+    body[0].style.height = '100%';
     HamToggler = 1;
   }
   else {dropdown.style.display = 'none';
+    body[0].style.height = '600px';
     HamToggler = 0;
   }
   bars.forEach(bar => bar.classList.toggle('x'))
+}
 
+window.onresize = function(){
+  if (HamToggler == 1){dropdown.style.display = 'none';
+    body[0].style.height = '600px';
+    HamToggler = 0;
+    bars.forEach(bar => bar.classList.toggle('x'))
+  }
 }
 
 navToggle.addEventListener('click', toggleHamburger)
