@@ -1,0 +1,90 @@
+body{
+    background-color: black;
+}
+.arrow{
+    display: none;}
+.textbox{
+    margin-top: 0;
+}
+.obomne-date{
+    font-family: "Montserrat", sans-serif;
+    font-size: 70px;
+    color: #63dd9aff;
+    font-weight:500;
+    margin-bottom: 0;
+}
+.double-container{
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.obomne-desc::before{
+    margin-top: 0;
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    border: 5px solid transparent; /*2*/
+    background: linear-gradient(to right, black, #ffffffff) border-box;
+    width: 100%;
+    height: 300px;
+    mask: /*4*/
+    linear-gradient(#000 0 0) padding-box, 
+    linear-gradient(#000 0 0);
+    mask-composite: exclude; /*5*/
+}
+.obomne-desc{
+    position: relative;
+    font-size: 18px;
+    font-weight: 100;
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+    padding: 20px;
+    color:white;
+}
+
+.obomne-desc-back::before{
+    margin-top: 0;
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    border: 5px solid transparent; /*2*/
+    background: linear-gradient(to left, black, #ffffffff) border-box;
+    width: 100%;
+    height: 300px;
+    mask: /*4*/
+    linear-gradient(#000 0 0) padding-box, 
+    linear-gradient(#000 0 0);
+    mask-composite: exclude; /*5*/
+}
+.obomne-desc-back{
+    position: relative;
+    font-size: 16px;
+    font-weight: 100;
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+    padding: 20px;
+    color:white;
+}
+
+.obomne-second{
+    align-content: center;
+}
+.obomne-second img{
+    display: none
+} 
+
+.obomne-first img{
+    width: 100%;
+}
+
+.obomne-three img{
+    width: 100%;
+}
+
+.obomne-three{
+    align-content: end;
+}

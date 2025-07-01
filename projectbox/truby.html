@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="semercas.css">
-    <link rel="stylesheet" href="project.css">
-    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" media="screen and (min-width: 1250px)" href="../semercas.css">
+    <link rel="stylesheet" media="screen and (max-width: 1250px)" href="../semercasim.css">
+    <link rel="stylesheet" media="screen and (min-width: 1250px)" href="project.css">
+    <link rel="stylesheet" media="screen and (max-width: 1250px)" href="projectim.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -13,10 +14,27 @@
 </head>
 <body>
     <div class = "header">
-        <a href="Semeraldph.html"><img href="Semeraldph.html" class = "logo" src="../logo.jpg"></img></a>
-        <a class = "tex" href="../Semeraldph.html">ГЛАВНАЯ</a><div class = "aux"></div><a class = "tex" href="../raboti.html">РАБОТЫ</a><div class = "aux"></div><a class = "tex" href="obomne.html">ОБО МНЕ</a>
-        <a class = "yaz split" href="../Semeraldphen.html">ENG</a>
-        <a class = "yaz split" href="../contact.html">КОНТАКТЫ</a>
+        <a href="../Semeraldph.html"><img href="../Semeraldph.html" class = "logo" src="../logo.jpg"></img></a>
+        <a class = "tex header-button" href="../Semeraldph.html">ГЛАВНАЯ</a><div class = "aux header-button"></div><a class = "tex header-button" href="../raboti.html">РАБОТЫ</a><div class = "aux header-button"></div><a class = "tex header-button" href="../obomne.html">ОБО МНЕ</a>
+        <a class = "yaz split header-button" href="../Semeraldphen.html">ENG</a>
+        <a class = "yaz split header-button" href="../contact.html">КОНТАКТЫ</a>
+        <a class = "split header-menu nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+    </div>
+    <div id="dropdown">
+    <a class="dropdown-item" href="../Semeraldph.html">ГЛАВНАЯ</a>
+    <hr>
+    <a class="dropdown-item" href="../raboti.html">РАБОТЫ</a>
+    <hr>
+    <a class="dropdown-item" href="../obomne.html">ОБО МНЕ</a>
+    <hr>
+    <div class = "mini">
+      <a href="../contact.html">КОНТАКТЫ</a>
+      <a href="../Semeraldphen.html">ENGLISH</a>
+    </div>
     </div>
 <div class="full-box">
 <img src="../truby_cover.jpg" alt="">
@@ -80,5 +98,6 @@
     </div>
 </div>
 <script src="imagerotator.js"></script>
+<script src="../crosser.js"></script>
 </body>
 </html>

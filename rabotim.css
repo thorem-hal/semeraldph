@@ -30,6 +30,7 @@ body{
     display: grid;
     justify-content: stretch;
     margin: 10px;
+    margin-left: 15px;
     gap: 10px;
     grid-template-columns: 1fr 1fr;
 

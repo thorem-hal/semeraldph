@@ -12,18 +12,22 @@ hr {
 }
 .icon-grid{
     display: grid;
-    grid-template-columns: 200px 200px;
-    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-content: stretch;
+    margin: auto;
     padding-top: 0;
 }
 .icon-grid img{
     height: 150px;
     padding-top: 0;
+    margin: auto;
 }
 
 .textbox p{
     color: white;
 }
+
 body{
     background-color: black;
 }
