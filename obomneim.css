@@ -13,11 +13,20 @@ body{
     font-weight:500;
     margin-bottom: 0;
 }
+
 .double-container{
     margin: 40px;
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
+    display: grid;
+    grid-template-areas: 
+    '.'
+    '.'
+    '.'
+    'a'
+    '.'
+    '.';
 }
 
 .obomne-desc::before{
@@ -35,6 +44,7 @@ body{
     linear-gradient(#000 0 0);
     mask-composite: exclude; /*5*/
 }
+
 .obomne-desc{
     position: relative;
     font-size: 18px;
@@ -43,6 +53,8 @@ body{
     text-align: left;
     padding: 20px;
     color:white;
+    margin-bottom: 50%;
+    
 }
 
 .obomne-desc-back::before{
@@ -61,6 +73,7 @@ body{
     mask-composite: exclude; /*5*/
 }
 .obomne-desc-back{
+    margin-bottom: 20%;
     position: relative;
     font-size: 16px;
     font-weight: 100;
@@ -72,10 +85,8 @@ body{
 
 .obomne-second{
     align-content: center;
+    grid-area: a;
 }
-.obomne-second img{
-    display: none
-} 
 
 .obomne-first img{
     width: 100%;
